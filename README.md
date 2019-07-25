@@ -1,3 +1,6 @@
 # bamazon
+Overview
 
-insert into `products` values(1,'GoogleGlass',100,499.99,5),(2,'TheNewton',101,1249.00,1),(3,'AtariETTheExtraTerrestrial',102,299.99,7),(4,'BKSatisfries',200,1.99,0),(5,'PremierSmokelessCigarettes',300,0.00,0),(6,'CheetosLipBalm',301,0.00,0),(7,'TerraNova',103,16.43,10),(8,'TouchofYogurtShamppoo',400,0.00,0),(9,'NewCoke',201,4995.00,1),(10,'WindowsVista',104,31.74,25);
+In this activity, we created an Amazon-like storefront with the MySQL skills from this unit. The app takes in orders from customers and deplete stock from the store's inventory. This funtionality of this program is dependant on the following npm packages: inquire, mysql, cli-table,
+
+<img width="578" alt="Screen Shot 2019-07-24 at 10 52 36 PM" src="https://user-images.githubusercontent.com/49299319/61850039-12fe5380-ae68-11e9-896d-3028093c2415.png">
