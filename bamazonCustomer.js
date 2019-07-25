@@ -3,18 +3,20 @@ var inquirer = ("inquirer");
 var Table = require("cli-table2");
 
 var connection = mysql.createConnection({
-    host: '127.0.0.1',
-    port: '3306',
+    host: 'localhost',
+    port: 3306,
     user: 'root',
-    password: 'Applegood99',
+    password: 'mypassword',
     database: 'bamazon_db'
 });
 
 connection.connect();
 
 var display = function() {
-  connection.query("SELECT * FROM products", function(err, res, fie) {
-    if (err) throw err;
+  connection.query("SELECT * FROM products", function(err, res) {
+    if (err) {
+      console.log('MY ERROR',err)
+    }
     console.log("-----------------------------");
     console.log("      Welcome To Bamazon    ");
     console.log("-----------------------------");
@@ -39,5 +41,4 @@ var display = function() {
     console.log("");
   }); 
 };
-
 display();
