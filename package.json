@@ -22,5 +22,6 @@
     "knex": "^0.19.1",
     "mysql": "github:mysqljs/mysql",
     "node-modules": "^1.0.1"
-  }
+  },
+  "devDependencies": {}
 }
