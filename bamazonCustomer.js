@@ -19,11 +19,11 @@ var display = function () {
     console.log("      Welcome To Bamazon    ");
     console.log("-----------------------------");
     console.log("");
-    console.log("Find below our Products List");
+    console.log("Find our Products List below");
     console.log("");
     var table = new Table({
       head: ["Product Id", "Product Description", "Cost"],
-      colWidths: [12, 50, 8],
+      colWidths: [12, 50, 10],
       colAligns: ["center", "left", "right"],
       style: {
         head: ["aqua"],
@@ -46,7 +46,7 @@ var shopping = function () {
     .prompt({
       name: "productToBuy",
       type: "input",
-      message: "Please enter the Product Id of the item you wish to purchase.!"
+      message: "Please enter the Product Id of the item you wish to purchase."
     })
     .then(function (answer1) {
       var selection = answer1.productToBuy;
@@ -57,7 +57,7 @@ var shopping = function () {
         if (err) throw err;
         if (res.length === 0) {
           console.log(
-            "That Product doesn't exist, Please enter a Product Id from the list above"
+            "That Product doesn't exist, Please enter a Product Id from the list above."
           );
 
           shopping();
@@ -74,7 +74,7 @@ var shopping = function () {
                 console.log(
                   "Our Apologies we only have " +
                   res[0].stock_quantity +
-                  " items of the product selected"
+                  " items of the product selected in sctock."
                 );
                 shopping();
               } else {
